@@ -4,7 +4,7 @@ pipeline {
 		PROJECT_ID = 'clean-mason-262222'
 		CLUSTER_NAME = ' sprint6-kubectl-cluster'
 		LOCATION = 'us-central1-c'
-		CREDENTIALS_ID = 'loveythakral' 
+		CREDENTIALS_ID = 'sprint6-k8' 
 		}
 		
 	    stages {	
