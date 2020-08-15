@@ -1,11 +1,11 @@
 pipeline {
         agent any
         environment {
-            registry = "loveythakral/sprint6dockerjenkins"
+            registry = "loveythakral/sprint6dockerjenkinsgcloud"
             registryCredential = 'dockerhubcredentials'
             dockerImage = ''
 		PROJECT_ID = 'devops-super10x'
- 		CLUSTER_NAME = 'sprint6-kubectl-cluster'
+ 		CLUSTER_NAME = 'sprint6-kubectl-cluster-gcloud'
  		LOCATION = 'us-central1-c'
  		CREDENTIALS_ID = 'sprint6-k8'
         }
