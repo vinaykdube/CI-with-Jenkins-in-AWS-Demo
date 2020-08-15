@@ -1,4 +1,5 @@
 pipeline {
+        agent any
         environment {
             registry = "loveythakral/loveydockerjenkins"
             registryCredential = 'dockerhubcredentials'
