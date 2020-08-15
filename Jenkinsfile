@@ -1,13 +1,8 @@
 pipeline {
-	    agent {
-			docker {
-				image 'docker:dind'
-				args '-u root:root -p 3000:3000 --privileged -v /var/run/docker.sock:/var/run/docker.sock'
-			}
-		}
+	    agent any
 		environment {
 		PROJECT_ID = 'clean-mason-262222'
-		CLUSTER_NAME = 'sprint6-kubectl-cluster-jenkins'
+		CLUSTER_NAME = 'sprint6-kubectl-cluster'
 		LOCATION = 'us-central1-c'
 		CREDENTIALS_ID = 'sprint6-k8' 
 		}
