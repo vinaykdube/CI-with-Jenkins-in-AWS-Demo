@@ -32,16 +32,6 @@ pipeline {
       }
     }
 
-    stage('Test docker image' ) {
-                agent {
-                docker { image 'loveythakral/loveyappsprint6:$BUILD_NUMBER' }
-            }
-            steps {
-                sh 'loveyapp --version'
-            }
-        }
-
-
     stage('Deploy Image') {
       steps{
         script {
