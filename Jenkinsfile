@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "loveythakral/loveyapp"
+    registry = "loveythakral/loveydockerjenkins"
     registryCredential = 'dockerhubcredentials'
     dockerImage = ''
   }
