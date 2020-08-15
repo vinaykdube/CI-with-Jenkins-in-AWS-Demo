@@ -4,6 +4,11 @@ pipeline {
             registry = "loveythakral/sprint6dockerjenkins"
             registryCredential = 'dockerhubcredentials'
             dockerImage = ''
+		PROJECT_ID = 'devops-super10x'
+ 		CLUSTER_NAME = 'sprint6-kubectl-cluster'
+ 		LOCATION = 'us-central1-c'
+ 		CREDENTIALS_ID = 'loveythakral'
+ }
         }
 		
 	    stages {	
