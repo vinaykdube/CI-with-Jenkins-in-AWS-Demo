@@ -1,7 +1,7 @@
 pipeline {
         agent any
         environment {
-            registry = "loveythakral/loveydockerjenkins"
+            registry = "loveythakral/sprint6dockerjenkins"
             registryCredential = 'dockerhubcredentials'
             dockerImage = ''
         }
@@ -32,17 +32,15 @@ pipeline {
 	                   }
 	                }
 		   }
-		   stage("Push Docker Image") {
-	                steps {
-	                   script {
-                        docker.withRegistry('https://registry.hub.docker.com', 'docker-hub') {
-                                dockerImage.push()		
-                        }
-				   
-	                   }
-	                }
-	            }
-		   
+            stage('Deploy Image') {
+                steps{
+                    script {
+                    docker.withRegistry( '', registryCredential ) {
+                        dockerImage.push()
+                    }
+                    }
+                }
+            }
 	           stage('Deploy to K8s') { 
 	                steps{
 	                   echo "Deployment started ..."
