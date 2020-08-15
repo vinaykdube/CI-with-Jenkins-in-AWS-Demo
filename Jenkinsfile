@@ -29,7 +29,7 @@ pipeline {
 		   stage('Build Docker Image') { 
 			steps {
 	                   script {
-	                      myapp = docker.build("loveythakral/sprint6-kube8s:${env.BUILD_ID}")
+	                      myapp = docker.build("loveythakral/sprint6kube8s:${env.BUILD_ID}")
 	                   }
 	                }
 		   }
