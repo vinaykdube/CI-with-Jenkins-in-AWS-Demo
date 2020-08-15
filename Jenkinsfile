@@ -2,7 +2,7 @@ pipeline {
  agent any
  environment {
  PROJECT_ID = 'decent-habitat-283302'
- CLUSTER_NAME = 'sprint6-kubectl-cluster'
+ CLUSTER_NAME = 'sprint6-kubectl-cluster-jenkinsdocker'
  LOCATION = 'us-central1-c'
  CREDENTIALS_ID = 'sprint6-k8'
  }
@@ -27,7 +27,7 @@ pipeline {
  stage("Build image") {
  steps {
  script {
- myapp = docker.build("loveythakral/sprint6kube8s:${env.BUILD_ID}")
+ myapp = docker.build("loveythakral/loveyapp:${env.BUILD_ID}")
  }
  }
  }
