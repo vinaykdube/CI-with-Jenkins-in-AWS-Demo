@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: mydockerapp
-        image: loveythakral/loveyapp:tagversion 
+        image: loveythakral/loveydockerjenkins:tagversion 
         ports:
         - containerPort: 8080
 ---
