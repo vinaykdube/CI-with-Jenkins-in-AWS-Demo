@@ -1,8 +1,8 @@
 pipeline {
 	    agent any 	
 		environment {
-		PROJECT_ID = 'clean-mason-262222'
-		CLUSTER_NAME = 'sprint6-kubectl-cluster-jenkins'
+		PROJECT_ID = 'glassy-clarity-282619'
+		CLUSTER_NAME = 'kube-demo'
 		LOCATION = 'us-central1-c'
 		CREDENTIALS_ID = 'sprint6-k8' 
 		}
@@ -29,7 +29,7 @@ pipeline {
 		   stage('Build Docker Image') { 
 			steps {
 	                   script {
-	                      myapp = docker.build("loveythakral/loveyapp:${env.BUILD_ID}")
+	                      myapp = docker.build("loveythakral/kube8s:${env.BUILD_ID}")
 	                   }
 	                }
 		   }
