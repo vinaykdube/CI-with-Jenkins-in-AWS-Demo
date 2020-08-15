@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: loveyapp
-        image: loveythakral/kube8s:tagversion 
+        image: loveythakral/loveyapp:tagversion 
         ports:
         - containerPort: 8080
 ---
