@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: mytestapp
-        image: loveythakral/sprint6dockerjenkinsgcloud:tagversion 
+        image: vinaykdube/sprint6dockerjenkinsgcloud:tagversion 
         ports:
         - containerPort: 8080
 ---
