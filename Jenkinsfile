@@ -2,7 +2,7 @@ pipeline {
         agent any
         environment {
             registry = "vinaykdube/sprint6dockerjenkinsgcloud"
-            registryCredential = 'dockerhubcredential'
+            registryCredential = 'dockerhubvinay'
             dockerImage = ''
 		PROJECT_ID = 'cobalt-alcove-279108'
  		CLUSTER_NAME = 'kube-cluster-gcloud1'
