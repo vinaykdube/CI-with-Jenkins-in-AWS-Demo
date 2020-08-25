@@ -1,13 +1,13 @@
 pipeline {
         agent any
         environment {
-            registry = "loveythakral/sprint6dockerjenkinsgcloud"
-            registryCredential = 'dockerhubcredentials'
+            registry = "vinaykdube/sprint6dockerjenkinsgcloud"
+            registryCredential = 'dockerhubcredential'
             dockerImage = ''
-		PROJECT_ID = 'devops-super10x'
- 		CLUSTER_NAME = 'sprint6-kubectl-cluster-gcloud'
+		PROJECT_ID = 'cobalt-alcove-279108'
+ 		CLUSTER_NAME = 'kube-cluster-gcloud1'
  		LOCATION = 'us-central1-c'
- 		CREDENTIALS_ID = 'sprint6-k8'
+ 		CREDENTIALS_ID = 'k8-jenkins'
         }
 		
 	    stages {	
